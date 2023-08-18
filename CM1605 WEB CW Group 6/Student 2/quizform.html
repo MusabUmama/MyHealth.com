@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+	<title>myhealth.com</title>
+	<link rel="stylesheet" href="style.css">	
+	<style>
+	
+	.formarea,h1{
+	color: #000;
+	font-weight: 80;
+	margin-bottom: 10px;
+	}
+	
+	form{
+	background: #fff;
+	padding: 2px ;
+	width: 60%;
+	max-width: 400px;
+	border-radius: 10px;
+	line-height: 20px;
+	font-size: 13px;
+	margin: 1% 15%;
+	}
+	
+	</style>
+	
+</head>
+
+
+<body>
+	<header>
+		<div class="wrapper">
+			<div class="logo">
+				<img src="images/logo1.jpeg" alt="">
+			</div>
+			
+			<ul class="navg-area">
+				<li><a href="main.html">Home</a></li>
+				<li><a href="#">Login</a></li>
+				<li><a href="#">Our service</a></li>
+				<li><a href="#">Medical packages</a></li>
+				<li><a href="#">About us</a></li>
+				<li><a href="quizform.html">Quiz</a></li>
+				<li><a href="#">Gallery</a></li>
+				<li><a href="query.html">Feedback</a></li>
+			</ul>
+		</div>
+		
+		<div class="welcometext">
+			<a href="editorspage.html">click here to go to editors page</a>
+		</div>
+		
+		
+		<div class = "formarea">
+		<h1>Answer this quiz correctly and earn 10 POINTS!</h1>
+		<form id="quiz" name="quiz">
+
+		<p>1.which system help for digestion?</p>
+		<input type ="radio" id="m" name="question1" value="correct">digestive system<br>
+		<input type ="radio" id="m" name="question1" value="wrong">skeleton system<br>
+		<input type ="radio" id="m" name="question1" value="wrong">excreatory system<br>
+		<input type ="radio" id="m" name="question1" value="wrong">nervous system<br>
+
+		<p>2.How many chambers are in the heart?</p>
+		<input type ="radio" id="m" name="question2" value="wrong">two<br>
+		<input type ="radio" id="m" name="question2" value="wrong">three<br>
+		<input type ="radio" id="m" name="question2" value="correct">four<br>
+		<input type ="radio" id="m" name="question2" value="wrong">five<br>
+
+		<p>3.what is the most important thing for our body?</p>
+		<input type ="radio" id="m" name="question3" value="wrong">physical health<br>
+		<input type ="radio" id="m" name="question3" value="wrong">mental health<br>
+		<input type ="radio" id="m" name="question3" value="correct">both<br>
+		<input type ="radio" id="m" name="question3" value="wrong">none of them<br>
+
+
+		<p>4.deficiency of vitamin D gives rise to?</p>
+		<input type ="radio" id="m" name="question4" value="wrong">rheumatism<br>
+		<input type ="radio" id="m" name="question4" value="wrong">arthritis<br>
+		<input type ="radio" id="m" name="question4" value="wrong">hernia<br>
+		<input type ="radio" id="m" name="question4" value="correct">rickets<br>
+
+
+		<p>5.what does niacin deficiency cause?</p>
+		<input type ="radio" id="m" name="question5" value="wrong">acne<br>
+		<input type ="radio" id="m" name="question5" value="correct">scurvy<br>
+		<input type ="radio" id="m" name="question5" value="wrong">boils<br>
+		<input type ="radio" id="m" name="question5" value="wrong">pellagra<br>
+
+		<input id="button" type="button" value="finished" onclick="check();">
+
+		</form>
+		</div>
+
+		<div id = "afterfinish">
+		<p id="correct"></p>
+		</div>
+
+	</header>
+
+
+
+<script>
+
+function check(){
+
+	var question1 = document.quiz.question1.value; 
+	var question2 = document.quiz.question2.value;
+	var question3 = document.quiz.question3.value;
+	var question4 = document.quiz.question4.value;
+	var question5 = document.quiz.question5.value;
+	var correct =0;
+	
+	if(question1 == "correct"){
+		correct; correct= correct + 2;
+	}
+	if(question2 == "correct"){
+		correct; correct= correct + 2;
+	}
+	if(question3 == "correct"){
+		correct; correct= correct + 2;
+	}
+	if(question4 == "correct"){
+		correct; correct= correct + 2;
+	}
+	if(question5 == "correct"){
+		correct; correct= correct + 2;
+	}
+	
+	alert("you have earned " + correct + " points,please claim the points in your next round");
+	
+	document.getElementById("afterfinish").style.visibility="non visible";
+	
+	
+}
+
+</script>
+
+
+</body>
+</html>

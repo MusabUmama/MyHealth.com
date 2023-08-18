@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Preferences</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="preferences.css">
+        <script type="text/javascript" src="signup-validate.js"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+			<div class="logo">
+				<img src="logo1.jpeg" alt="">
+			</div>
+			
+			<ul class="navg-area">
+				<li><a href="main.html">Home</a></li>
+				<li><a href="signup.html">Signup</a></li>
+				<li><a href="#">Our service</a></li>
+				<li><a href="#">Medical packages</a></li>
+				<li><a href="#">About us</a></li>
+				<li><a href="quiz.html">Quiz</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="query.html">Feedback</a></li>
+			</ul>
+		</div>
+        
+        <div id="preferences" class="preferences">
+            <h2><center>Preferences</center></h2>
+            
+            <form name="preferences" action="service_pref.html" onsubmit="return validateFormDiseases(this)" method="post">
+                <div class="container">
+                    <div class="form">
+
+                        <h3>What illnesses/diseases do you have (commonly)</h3>
+
+                        <input type="checkbox" id="d1" name="d1" value="Cold and flu">
+                        <label for="d1">Cold and flu</label><br>
+                        <input type="checkbox" id="d2" name="d2" value="Diabetes">
+                        <label for="d2">Diabetes</label><br>
+                        <input type="checkbox" id="d3" name="d3" value="Asthma">
+                        <label for="d3">Asthma</label><br><br>
+                        <input type="checkbox" id="d4" name="d4" value="Skin diseases">
+                        <label for="d4">Skin diseases</label><br><br>
+                        <input type="checkbox" id="d5" name="d5" value="Heart diseases">
+                        <label for="d4">Heart diseases</label><br><br>
+                        <input type="checkbox" id="other" name="other" value="other">
+                        <label for="d4">other</label><br><br>
+
+                    </div>
+
+                    <div class="button">
+                        <button type="submit" class="submitbtn">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <a href="EditorPage.html" id="editorPage"><h4>Editors' Page</h4></a>
+
+    </body>
+</html>

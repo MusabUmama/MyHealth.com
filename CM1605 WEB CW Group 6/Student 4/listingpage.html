@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>MyHealth.com</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadXMLDoc()">
+	<header>
+		<div class="wrapper">
+			<div class="logo">
+				<img src="images/logo1.jpeg" alt="">
+			</div>
+			<ul class="navg-area">
+				<li><a href="main.html">Home</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="service.html">Our service</a></li>
+				<li><a href="package.html">Medical packages</a></li>
+				<li><a href="aboutus.html">About us</a></li>
+				<li><a href="quizform.html">Quiz</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="query.html">Queryform</a></li>
+			</ul>
+		</div>
+		<div class="welcometext">
+			<h1>WE CARE ABOUT YOU.</h1>
+		</div>
+	</header>
+
+	<h1 id="titleh2">MyHealth Reviews</h1>
+
+
+
+	<script>
+		function loadXMLDoc() {
+			var xmlhttp = new XMLHttpRequest();
+			xmlhttp.onreadystatechange = function() {
+
+				// Request finished and response
+				// is ready and Status is "OK"
+				if (this.readyState == 4 && this.status == 200) {
+					empDetails(this);
+				}
+			};
+
+			// employee.xml is the external xml file
+			xmlhttp.open("GET", "reviews.xml", true);
+			xmlhttp.send();
+		}
+
+		function empDetails(xml) {
+			var i;
+			var xmlDoc = xml.responseXML;
+			var table =
+				`<tr>
+
+				</tr>`;
+			var x = xmlDoc.getElementsByTagName("review");
+
+			// Start to fetch the data by using TagName
+			for (i = 0; i < x.length; i++) {
+				table += "<tr><td>" +
+					// x[i].getElementsByTagName("rating")[0]
+					// .childNodes[0].nodeValue + "</td><td>" +
+					x[i].getElementsByTagName("c_photo")[0]
+					.childNodes[0].nodeValue + "</td><td>" +
+					x[i].getElementsByTagName("feedback")[0]
+					.childNodes[0].nodeValue;
+			}
+
+			// Print the xml data in table form
+			document.getElementById("id").innerHTML = table;
+		}
+	</script>
+
+	<script>
+		function validateForm() {
+			let x = document.forms["myForm"]["fname"].value;
+			if (x == "") {
+				alert("Name must be filled out");
+				return false;
+			}
+		}
+	</script>
+
+	<br><br>
+	<section>
+		<div>
+			<table class="center" id="id"></table>
+		</div>
+
+		<div class="container">
+			<button id="btn">Click Here to Change Text Color</button>
+		</div>
+
+
+
+	</section>
+	<section>
+
+	</div>
+
+	<div class="container">
+	<span id='1' onclick="color(this)" class='color clr1'></span>
+	<span id='2' onclick="color(this)" class='color clr2'></span>
+	<span onclick="color(this)" class='color clr3'></span>
+	<span onClick="color(this)" class='color clr4'></span>
+ </div>
+
+		<div class="container">
+			<form name="myForm" onsubmit="sendEmail(); reset(); return false;">
+				<h3>SIGN UP TO OUR NEWSLETTER</h3>
+				<input type="text" name="fname" id="name" placeholder="Your Name" >
+				<input type="email" id="email" placeholder="Email ID" required>
+
+				<button type="submit"> Submit</button>
+
+				<script src="https://smtpjs.com/v3/smtp.js"></script>
+				<script>
+					var userName1 = document.getElementById('name').value;
+
+					function sendEmail() {
+						Email.send({
+							Host: "smtp.elasticemail.com",
+							Username: "jesuli.20210667@iit.ac.lk",
+							Password: "C5F14C26C2606121A7B9B631FEA5E475A425",
+							To: 'jesuli.20210667@iit.ac.lk',
+							From: "jesuli.20210667@iit.ac.lk",
+							Subject: "[MyHealth] New Newsletter Sign Up!",
+							Body: "Name : " + document.getElementById("name").value + "<br> Email : " + document.getElementById("email").value
+						}).then(
+							message => alert('Dear' + userName1 + ", you have successfully subscribed")
+						);
+					}
+				</script>
+			</form>
+		</div>
+
+		<div class="link">
+
+			<a href="editorspage.html" text-align>Click Here to Visit the Editors Page</a>
+
+
+
+	</section>
+
+	<script>
+		function color(z) {
+		var a = getComputedStyle(z);
+		var b = a.backgroundColor;
+		document.getElementsByTagName("BODY")[0].style.backgroundColor=b;
+		}
+		</script>
+
+		<script type="text/javascript">
+
+		const btn = document.getElementById('btn');
+
+	btn.addEventListener('click', function onClick(event) {
+	  // 👇️ Change text color globally
+	  document.body.style.color = 'darkgreen';
+
+	  // 👇️ Change text color for clicked element only
+	  // event.target.style.color = 'salmon';
+	});
+
+		</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Product Page</title>
+
+<head>
+	<link rel="stylesheet" href="style.css">
+	<a name="top"></a>
+	<title>My Health</title>
+	<style>
+		body {
+			background-image: url('images/pim.jpg');
+
+		}
+	</style>
+</head>
+
+<body id="body">
+
+	<img src="images/logo1.jpeg" width="250px" height="250px" float="left" margin-top:" 0px"><br>
+	<h4>
+		<left>We Care About You</left>
+	</h4>
+	<nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<i class="fas fa-bars"></i>
+		</label>
+
+		<ul>
+			<h1>
+				<li><a href="main.html">Home</a>
+				<li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="service.html">Our Service</a></li>
+				<li><a href="medicalpackages.html">Medical Packages</a></li>
+				<li><a href="quizform.html">Quiz</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="query.html">Query form</a></li>
+			</h1>
+		</ul>
+	</nav>
+
+
+	<h1>......Our Online Store.....</h1>
+	<div>
+		<button onclick="increaseFontSize()" class="formbuttons">increase Font Size</button>
+		<button onclick="reduceFontSize()" class="formbuttons">Reduce Font Size</button>
+	</div>
+	<table>
+		<tr>
+			<td align="center"><img src="images/doc.png" width="180" height="180"></td>
+			<td align="center"><img src="images/check.jpg" width="180" height="180"></td>
+			<td align="center"><img src="images/con.png" width="180" height="180"></td>
+			<td align="center"><img src="images/vou.jpg" width="180" height="180"></td>
+			<td align="center"><img src="images/room.jfif" width="180" height="180"></td>
+		</tr>
+
+		<tr style="font-size: 15px;" id="trvalues">
+			<td align="center" class="mystyle">Doctor Channeling<br>Can join physically and online <br>
+				Price: $.210,24, 15<br> Mode:<input type="radio" name="mode1" id="mode1"><label for="mode1">
+					Doctor<input type="radio" name="mode1" id="mode11">Specialist <input type="radio" name="mode1"
+						id="mode111">E Channelling</td></label>
+
+			<td align="center" class="mystyle">Body Check Up:2<br>Check Your Symptoms<br>
+				price: $.44,100,70<br> Mode:<input type="radio" name="mode2" id="mode2"><label
+					for="mode2">
+					Half Body<input type="radio" name="mode2" id="mode22">Full Body<input type="radio" name="mode2"
+						id="mode222">Senior Citizens</td></label>
+
+			<td align="center" class="mystyle">wellness  with consultant  <br>Physically  And Mentally  Wellness<br>price: $.18, 25, 20<br>
+				Mode:<input type="radio" name="mode3" id="mode3"><label for="mode3">
+					Physical Wellness Class <input type="radio" name="mode3" id="mode33">Individual  Consultant <input type="radio" name="mode3" id="mode333">Physiology 
+			</td></label>
+
+
+			<td align="center" class="mystyle">Share Your  Kindness <br> Gift Vouchers <br>price: $.25, 75,250<br>
+				Mode:<input type="radio" name="mode4" id="mode4"><label for="mode4">
+					25<input type="radio" name="mode4" id="mode44">75<input type="radio" name="mode4" id="mode444">250
+			</td></label>
+
+			<td align="center" class="mystyle">Stay With  Us<br>Day Payment Rooms  With All Medical  Facilities  <br>
+				Mode: $.100, 500, 800<br> size:<input type="radio" name="mode5" id="mode5"><label for="mode5">
+					Normal Room<input type="radio" name="mode5" id="mode55">Room<input type="radio" name="mode5" id="mode555">Small Medial  Area
+			</td></label>
+
+
+
+
+
+		</tr>
+	</table><br>
+
+	<fieldset>
+		<form>
+			<legend>Provide your details to buy ></legend>
+			<div class="fname">
+				<label for="fname"> Name &emsp; &emsp; &emsp; :
+					<input type="text" name="fname" id="fname" size="50" placeholder="Enter your name">|
+				</label>
+			</div>
+			<div class="mail">
+				<label for="mail"> Email address &ensp;:
+					<input type="email" name="mail" id="mail" size="40">|
+				</label>
+			</div>
+			<div class="address">
+				<label for="address"> Address &emsp; &emsp; &ensp;:
+					<input type="text" name="address" id="address" size="40">|
+				</label>
+			</div>
+			<div class="credit">
+				<label for="creditcard"> Credit card No &ensp;:
+					<input type="tel" id="creditcard" placeholder="xxxxxxxxxxxxxxxx">|
+				</label>
+				<br>
+				<br>
+				<div class="points">
+					<label for=" points"> points &ensp;:
+						<input type="number" id="points" size="30">|
+					</label>
+				</div>
+				<br>
+
+
+
+				<div class="tele">
+					<label for="telephone"> Mobile No &emsp; &emsp;:
+						<input type="tel" id="mobile" placeholder="xxxxxxxxxx">|
+					</label>
+				</div>
+		</form>
+		<br>
+		<table>
+			<tr>
+				<td>
+					<label for="order">Order Summary:
+						<textarea id="order" name="order" rows="6" cols="50" color="black"> </textarea>
+				</td></label>
+				<td><button onclick="myspecial();return false;" class="formbuttons">Place Order</button></td>
+				<td><button onclick="window.location.reload();" class="formbuttons">Reset</button></td>
+			</tr>
+		</table>
+		<div class="footer">
+			<div class="social">
+
+				<a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+				<a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+				<a href="https://lk.linkedin.com"><i class="fa fa-linkedin"></i></a>
+
+				<p class="copyright">My Health © 2021</p>
+			</div>
+
+			<a href="demini.html">Page Editer</a>
+
+		</div>
+
+		<a href="#logo" style="text-decoration: none;color : white">Back to Top</a>
+		</div>
+
+	</fieldset>
+	<script>
+		var size = 10
+		function increaseFontSize() {
+
+			var element = document.getElementById("trvalues");
+			console.log("element.style.fontSize", element.style.fontSize);
+			size = parseFloat(element.style.fontSize.slice(0, -2)) + 5
+			element.style.fontSize = size + "px";
+		}
+		function reduceFontSize() {
+
+			var element = document.getElementById("trvalues");
+			console.log("element.style.fontSize", element.style.fontSize);
+			size = parseFloat(element.style.fontSize.slice(0, -2)) - 5
+			element.style.fontSize = size + "px";
+		}
+
+		function myspecial() {
+			var a = document.getElementById("mode1");
+			var aa = document.getElementById("mode11");
+			var aaa = document.getElementById("mode111");
+
+			var b = document.getElementById("mode2");
+			var bb = document.getElementById("mode22");
+			var bbb = document.getElementById("mode222");
+
+			var c = document.getElementById("mode3");
+			var cc = document.getElementById("mode33");
+			var ccc = document.getElementById("mode333");
+
+			var d = document.getElementById("mode4");
+			var dd = document.getElementById("mode44");
+			var ddd = document.getElementById("mode444");
+
+			var e = document.getElementById("mode5");
+			var ee = document.getElementById("mode55");
+			var eee = document.getElementById("mode555");
+			var pointsInput = document.getElementById("points");
+			var points = pointsInput.value;
+			var totala = 0;
+			var channeling = "";
+			if (a.checked == true) {
+				totala = 210;
+				channeling = "Doctor"
+			} else if (aa.checked == true) {
+				var totala = 24;
+				channeling = "Specialist "
+			} else if (aaa.checked == true) {
+				var totala = 15;
+				channeling = "E Channelling"
+			}
+			else {
+				var totala = 0;
+			}
+			var totalb = 0;
+			var checkType = ""
+			if (b.checked == true) {
+				totalb = 44;
+				channeling = "Specialist "
+			} else if (bb.checked == true) {
+				var totalb = 100;
+			}
+			else if (bbb.checked == true) {
+				var totalb = 70;
+			}
+			else {
+				var totalb = 0;
+			}
+
+			if (c.checked == true) {
+				var totalc = 18;
+			} else if (cc.checked == true) {
+				var totalc = 25;
+			}
+			else if (ccc.checked == true) {
+				var totalc = 20;
+			}
+			else {
+				var totalc = 0;
+			}
+			if (d.checked == true) {
+				var totald = 25;
+			} else if (dd.checked == true) {
+				var totald = 75;
+			} else if (ddd.checked == true) {
+				var totald = 250;
+			}
+			else {
+				var totald = 0;
+			}
+			if (e.checked == true) {
+				var totale = 100;
+			} else if (ee.checked == true) {
+				var totale = 500;
+			} else if (eee.checked == true) {
+				var totale = 250;
+			}
+			else {
+				var totale = 0;
+			}
+			var total = totala + totalb + totalc + totald + totale;
+			var deductValue = (total / 100.0) * points;
+			var discountPrice = total - deductValue;
+			document.getElementById('order').innerHTML = "Name : " + document.getElementById('fname').value + "\nEmail : "
+				+ document.getElementById('mail').value + "\n Address : " + document.getElementById('address').value + "\nMobile No. : "
+				+ document.getElementById('mobile').value + "\n Order Total :- " + total
+				+ "\n Discount Price Total :- " + discountPrice;
+
+			alert("Dear " + document.getElementById('fname').value + " your total is "
+				+ total + " and discount is" + discountPrice);
+		}
+	</script>
+
+</body>
+
+</html>
+
+
+</body>
+
+</html>

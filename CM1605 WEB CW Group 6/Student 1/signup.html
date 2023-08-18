@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="signup.css">
+    <head>
+        <title>Signup</title>
+        <script type="text/javascript" src="signup-validate.js"></script>
+    </head>
+
+    <body>
+        
+        <div class="wrapper">
+			<div class="logo">
+				<img src="logo1.jpeg" alt="">
+			</div>
+			
+			<ul class="navg-area">
+				<li><a href="main.html">Home</a></li>
+				<li><a href="signup.html">Signup</a></li>
+				<li><a href="#">Our service</a></li>
+				<li><a href="#">Medical packages</a></li>
+				<li><a href="#">About us</a></li>
+				<li><a href="quiz.html">Quiz</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="query.html">Feedback</a></li>
+			</ul>
+		</div>
+
+
+        <div id="signup" class="signup">
+            <form name="signupForm" onsubmit="return validateForm()" method="post" action="diseases_choose.html">
+                <div class="container">
+                    <div class="form">
+                        <input type="text" id="fname" name="fname" placeholder="First name"><br>
+                    </div>
+                    <div class="form">
+                        <input type="text" id="lname" name="lname" placeholder="Last name"><br>
+                    </div>
+                    <div class="form">
+                        <input type="email" id="email" name="email" placeholder="Email"><br>
+                    </div>
+                    <div class="form">
+                        <input type="Number" id="age" name="age" placeholder="Age"><br>
+                    </div>
+                    <div class="select">
+                        <center>
+                        <select name="gender" id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                        </center>
+                    </div>
+                    <div class="form">
+                        <input type="text" id="occupation" name="occupation" placeholder="Occupation"><br>
+                    </div>
+    
+                    <div class="button">
+                        <button type="submit" class="signupbtn">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <a href="EditorPage.html" id="editorPage"><h4>Editors' Page</h4></a>
+
+    </body>
+</html>

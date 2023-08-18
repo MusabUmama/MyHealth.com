@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<reviews>
+    <review>
+        <c_photo><![CDATA[<html>
+        <img src="customer_icons/1.jpg" class="customer_icons "alt="Avatar" style="width:100px">
+        </html>]]>
+        </c_photo>
+        <feedback><![CDATA[<html>
+        <h2>★★★★★</h2>
+        <p style="color:grey">Johnny C.</p>
+        <br>
+        <strong>Very Accurate!</strong>
+        <br>
+        <p><i>I don’t usually leave reviews, but this app has been incredibly helpful.</i></p>
+
+        </html>]]>
+        </feedback>
+    </review>
+
+    <review>
+        <c_photo><![CDATA[<html>
+        <img src="customer_icons/2.jpg" class="customer_icons "alt="Avatar" style="width:100px">
+        </html>]]>
+        </c_photo>
+        <feedback><![CDATA[<html>
+        <h2>★★★★☆</h2>
+        <p style="color:grey">Mathew</p>
+        <br>
+        <strong>Programmed very well..</strong>
+        <br>
+        <p><i>I’m diagnosed with bipolar disorder and MyHealth has been able to help me.</i></p>
+
+        </html>]]>
+        </feedback>
+    </review>
+
+    <review>
+        <c_photo><![CDATA[<html>
+        <img src="customer_icons/3.jpg" class="customer_icons "alt="Avatar" style="width:100px">
+        </html>]]>
+        </c_photo>
+        <feedback><![CDATA[<html>
+        <h2>★★★★★</h2>
+        <p style="color:grey">Emma W.</p>
+        <br>
+        <strong>Extremely helpful and well organized.</strong>
+        <br>
+        <p><i>Only a couple suggestions for improvement; improve the database and create a desktop app.</i></p>
+
+        </html>]]>
+        </feedback>
+    </review>
+
+    <review>
+        <c_photo><![CDATA[<html>
+        <img src="customer_icons/4.jpg" class="customer_icons "alt="Avatar" style="width:100px">
+        </html>]]>
+        </c_photo>
+        <feedback><![CDATA[<html>
+        <h2>★★★★★</h2>
+        <p style="color:grey">Karen C.</p>
+        <br>
+        <strong>This app benefited me a lot</strong>
+        <br>
+        <p><i>I was able prediagnose my disease and this app probably saved my life.</i></p>
+
+        </html>]]>
+        </feedback>
+    </review>
+
+    <review>
+        <c_photo><![CDATA[<html>
+        <img src="customer_icons/5.jpg" class="customer_icons "alt="Avatar" style="width:100px">
+        </html>]]>
+        </c_photo>
+        <feedback><![CDATA[<html>
+        <h2>★★★★★</h2>
+        <p style="color:grey">Katie Byers</p>
+        <br>
+        <strong>Very detailed and easy to understand</strong>
+        <br>
+        <p><i>Absolutely some of the best descriptions. Very detailed and easy to understand.</i></p>
+
+        </html>]]>
+        </feedback>
+    </review>
+
+    <review>
+        <c_photo><![CDATA[<html>
+        <img src="customer_icons/6.jpg" class="customer_icons "alt="Avatar" style="width:100px">
+        </html>]]>
+        </c_photo>
+        <feedback><![CDATA[<html>
+        <h2>★★★★★</h2>
+        <p style="color:grey">Kevin H</p>
+        <br>
+        <strong>Love the premium features</strong>
+        <br>
+        <p><i>I bought the premium facility and it has exceeded my expectations.</i></p>
+
+        </html>]]>
+        </feedback>
+    </review>
+
+    <review>
+        <c_photo><![CDATA[<html>
+        <img src="customer_icons/7.jpg" class="customer_icons "alt="Avatar" style="width:100px">
+        </html>]]>
+        </c_photo>
+        <feedback><![CDATA[<html>
+        <h2>★★★★★</h2>
+        <p style="color:grey">Linda H.</p>
+        <br>
+        <strong>This app is great!</strong>
+        <br>
+        <p><i>>It helped me understand what may possibly be going wrong with my body.</i></p>
+
+        </html>]]>
+        </feedback>
+    </review>
+
+    <review>
+        <c_photo><![CDATA[<html>
+        <img src="customer_icons/8.jpg" class="customer_icons "alt="Avatar" style="width:100px">
+        </html>]]>
+        </c_photo>
+        <feedback><![CDATA[<html>
+        <h2>★★★★★</h2>
+        <p style="color:grey">Angela W.</p>
+        <br>
+        <strong>What a great app for first stage help.</strong>
+        <br>
+        <p><i>I've been trying to find a diagnosis for my health issues and MyHealth was able do it in minutes</i></p>
+
+        </html>]]>
+        </feedback>
+    </review>
+
+    <review>
+        <c_photo><![CDATA[<html>
+        <img src="customer_icons/9.jpg" class="customer_icons "alt="Avatar" style="width:100px">
+        </html>]]>
+        </c_photo>
+        <feedback><![CDATA[<html>
+        <h2>★★★★★</h2>
+        <p style="color:grey">Daniel H. Pink</p>
+        <br>
+        <strong>Very Easy to Use and accurate!</strong>
+        <br>
+        <p><i>I just entered my symptoms, answered a few questions and voila, I received a list of possible diagnoses.</i></p>
+
+        </html>]]>
+        </feedback>
+    </review>
+
+    <review>
+        <c_photo><![CDATA[<html>
+        <img src="customer_icons/10.jpg" class="customer_icons "alt="Avatar" style="width:100px">
+        </html>]]>
+        </c_photo>
+        <feedback><![CDATA[<html>
+        <h2>★★★★★</h2>
+        <p style="color:grey">Taylor White</p>
+        <br>
+        <strong>A Very Handy Tool</strong>
+        <br>
+        <p><i>Very helpful to identify the most likely illness. Helps in both avoiding panic as well as asking for medical assistance!</i></p>
+
+        </html>]]>
+        </feedback>
+    </review>
+
+</reviews>

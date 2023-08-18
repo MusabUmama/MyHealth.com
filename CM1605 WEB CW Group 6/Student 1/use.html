@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Preferences</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="preferences.css">
+        <script type="text/javascript" src="signup-validate.js"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+			<div class="logo">
+				<img src="logo1.jpeg" alt="">
+			</div>
+			
+			<ul class="navg-area">
+				<li><a href="main.html">Home</a></li>
+				<li><a href="signup.html">Signup</a></li>
+				<li><a href="#">Our service</a></li>
+				<li><a href="#">Medical packages</a></li>
+				<li><a href="#">About us</a></li>
+				<li><a href="quiz.html">Quiz</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="query.html">Feedback</a></li>
+			</ul>
+		</div>
+        
+        <div id="preferences" class="preferences">
+
+            <h2><center>Preferences</center></h2>
+
+            <form name="preferences" action="main.html" onsubmit="return validateFormUse(this); return confirmSignup()" method="post">
+                <div class="container">
+                    <div class="form">
+
+                        <h3>How often are you expecting to use this website</h3>
+
+                        <div>
+                            <input type="radio" id="daily" name="daily" value="daily">
+                            <label for="daily">Daily</label><br>
+                        </div>
+
+                        
+                        <div>
+                            <input type="radio" id="weekly" name="weekly" value="weekly">
+                            <label for="weekly">Weekly</label><br>
+                        </div>
+
+                        
+                        <div>
+                            <input type="radio" id="monthly" name="monthly" value="monthly">
+                            <label for="monthly">Monthly</label><br>
+                        </div>
+
+                    </div>
+    
+                    <div class="button">
+                        <button type="submit" class="submitbtn">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <a href="EditorPage.html" id="editorPage"><h4>Editors' Page</h4></a>
+
+    </body>
+</html>

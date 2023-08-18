@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MyHealth.com</title>
+<script>
+var nameError = document.getElementById('name-error');
+var emailError = document.getElementById('Email-required');
+var quaryError = document.getElementById('text-error');
+var submitError = document.getElementById('submit-error');
+
+function validatename(){
+	var name = document.getElementById('name').value;
+	
+	if(name.length == 0){
+		nameError.innerHTML = 'Name is required';
+		return false;
+	}
+	if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
+		nameError.innerHTML = 'write correct name';
+		returnfalse;
+	}
+	nameError.innerHTML = 'saved!';
+	return true;
+}
+
+function validateemail(){
+	var email = document.getElementById('email').value;
+	
+	if(email.length == 0){
+		emailError.innerHTML = 'Email is required';
+		return false;
+	}
+	if(!email.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/){
+		emailError.innerHTML = 'Invalid Email';
+		returnfalse;
+	}
+	emailError.innerHTML = 'saved!';
+	return true;
+}
+
+function validatequary(){
+	var quary = document.getElementById('quary').value;
+	var required =10;
+	var left = required-quary.length;
+
+	if(left>0){
+		quaryError.innerHTML = left + 'more characters required';
+		return false;
+	}
+	
+	quaryError.innerHTML = 'saved!';
+	return true;
+}
+
+function validateoption1(){
+}
+
+function validateoption2(){
+}
+
+function validateForm(){
+	if(!validatename() || !validateemail() || !validatequary() || !validateoption1() && !validateoption2()){
+		submitError.innerHTML = 'please fix error to submit';
+		returnfalse;
+	}
+}	
+	
+	
+</script>
+	
+<link rel="stylesheet" href="style.css">	
+<style>
+body{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'poppins', sans-serif;
+background: #555;
+}
+	
+form{
+width:150%;
+background: #fff;
+display: flex;
+flex-direction: column;
+padding: 2vw 2vw;
+max-width: 400px;
+border-radius: 10px;
+line-height: 3px;
+position: absolute;
+bottom: 3px;
+margin: 1% 14%;
+}
+	
+form h3{
+color: #555;
+font-weight: 800;
+margin-bottom: 20px;
+}
+	
+	
+
+form input, form textarea{
+border: 0;
+margin: 10px 0;
+padding: 16px;
+outline: none;
+background: ;
+font-size: 16px;
+	
+}
+	
+form span{
+font-size: 14px;
+color:red;
+}
+	
+form label{
+color: #555;
+font-size: 12px;
+padding: 0px 60px;
+}
+	
+form button{
+padding: 15px;
+background: #001660;
+color: #fff;
+font-size:18px;
+border: 0;
+outline: none;
+cursor: pointer;
+width: 110px;
+margin: 20px auto 0;
+border-radius: 30px;
+}	
+
+</style>
+</head>
+<body>
+<header>
+<div class="wrapper">
+<div class="logo">
+<img src="images/logo1.jpeg" alt="">
+</div>			
+<ul class="navg-area">
+<li><a href="main.html">Home</a></li>
+<li><a href="#">Login</a></li>
+<li><a href="#">Our service</a></li>
+<li><a href="#">Medical packages</a></li>
+<li><a href="#">About us</a></li>
+<li><a href="quizform.html">Quiz</a></li>
+<li><a href="#">Gallery</a></li>
+<li><a href="query.html">Feedback</a></li>
+</ul>
+</div>
+
+<div class="welcometext">
+<a href="editorspage.html">click here to go to editors page</a>
+</div>
+
+<form>
+<h3>Query Form</h3>
+					
+<div class="group">
+<input type="text" id="name" placeholder="Your name" onkeyup="validatename()">
+<span id="name-error"></span>
+</div>
+					
+<div class="group">
+<input type="text" id="email" placeholder="Your Email" onkeyup="validateemail()">
+<span id="Email-required"></span>
+</div>
+					
+<div class="group">
+<input type="radio" name="size" id="query1" checked="checked" onkeyup="validateoption1()" >
+<label for "query1">About equipments</label><br>
+<input type="radio" name="size" id="query2" checked="checked" onkeyup="validateoption2()">
+<label>About specialists</label>
+</div>
+					
+<div class="group">
+<textarea id="quary" rows="4" placeholder="Enter your message" onkeyup="validatequary()"></textarea>
+<span id="text-error"></span>
+<div>
+					
+<div class="group">
+<button type="reset"> reset</button>
+<button type="submit" onclick="return validateForm()"> send</button>
+<span id="submit-error"></span>
+</div>
+			
+</form>
+</header>
+</body>
+</html>
+		
+
+
+
+	
+		

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Preferences</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="preferences.css">
+        <script type="text/javascript" src="signup-validate.js"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+			<div class="logo">
+				<img src="logo1.jpeg" alt="">
+			</div>
+			
+			<ul class="navg-area">
+				<li><a href="main.html">Home</a></li>
+				<li><a href="signup.html">Signup</a></li>
+				<li><a href="#">Our service</a></li>
+				<li><a href="#">Medical packages</a></li>
+				<li><a href="#">About us</a></li>
+				<li><a href="quiz.html">Quiz</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="query.html">Feedback</a></li>
+			</ul>
+		</div>
+        
+        <div id="preferences" class="preferences">
+
+            <h2><center>Preferences</center></h2>
+
+            <form name="preferences" action="use.html" onsubmit="return validateFormServices(this)" method="post">
+                <div class="container">
+                    <div class="form">
+
+                        <h3>What services do you want to use</h3>
+
+                        <input type="checkbox" id="s1" name="s1" value="Self-diagnosis">
+                        <label for="s1">Self-diagnosis</label><br>
+                        <input type="checkbox" id="s2" name="s2" value="Check doctors schedules">
+                        <label for="s2">Check doctors schedules</label><br>
+                        <input type="checkbox" id="s3" name="s3" value="Purchase medicial equipments">
+                        <label for="s3">Purchase medicial equipments</label><br>
+                        <input type="checkbox" id="other" name="other" value="other">
+                        <label for="other">Other</label><br>
+                    </div>
+    
+                    <div class="button">
+                        <button type="submit" class="submitbtn">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <a href="EditorPage.html" id="editorPage"><h4>Editors' Page</h4></a>
+    </body>
+</html>
